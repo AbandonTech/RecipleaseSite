@@ -24,6 +24,7 @@ jobs:
         run: |
           npm ci
           npm run build
+          touch build/.nojekyll
         working-directory: ./site
 
       - name: Deploy
