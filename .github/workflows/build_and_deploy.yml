@@ -23,7 +23,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          npm run build
+          PUBLIC_URL=/RecipleaseSite npm run build
           touch build/.nojekyll
         working-directory: ./site
 
